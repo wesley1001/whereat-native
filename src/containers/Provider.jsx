@@ -7,9 +7,9 @@ import reducer from '../redux/modules/reducer';
 const startingState = {
 	location: {
 		currentLocation: {
-			latitude: 42.645650,
-			longitude: -73.754199,
-			lastUpdatedTime: 1455227589
+			latitude: 0,
+			longitude: 0,
+			lastUpdatedTime: 0
 		}
 	}
 };
