@@ -3,8 +3,7 @@ export const LOCATION_CHANGED = "LOCATION_CHANGED";
 export const initialState = {
   location: {
     latitude: 40.7092649,
-    longitude: -74.0134507,
-    lastUpdatedTime: 1316232000000
+    longitude: -74.0134507
   }
 };
 

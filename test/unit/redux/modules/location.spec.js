@@ -9,8 +9,7 @@ describe("location module" , () => {
         const state = {
           location: {
             latitude: 51.05,
-            longitude: -0.13,
-            lastUpdatedTime: 1455047952
+            longitude: -0.13
           }
         };
         const action = {
@@ -18,8 +17,7 @@ describe("location module" , () => {
           payload: {
             location: {
               latitude: 51.51,
-              longitude: -0.14,
-              lastUpdatedTime: 1455060001
+              longitude: -0.14
             }
           }
         };
@@ -27,8 +25,7 @@ describe("location module" , () => {
         expect(newState).to.deep.equal({
           location: {
             latitude: 51.51,
-            longitude: -0.14,
-            lastUpdatedTime: 1455060001
+            longitude: -0.14
           }
         });
       });
@@ -38,8 +35,7 @@ describe("location module" , () => {
           payload: {
             location: {
               latitude: 5,
-              longitude: 1,
-              lastUpdatedTime: 30
+              longitude: 1
             }
           }
         }
@@ -47,8 +43,7 @@ describe("location module" , () => {
         expect(newState).to.deep.equal({
           location: {
             latitude: 5,
-            longitude: 1,
-            lastUpdatedTime: 30
+            longitude: 1
           }
         });
       });
@@ -72,8 +67,7 @@ describe("location module" , () => {
     it("should create action of type LOCATION_CHANGED, setting location property", () => {
       const aLocation = {
         latitude: 5,
-        longitude: 1,
-        lastUpdatedTime: 30
+        longitude: 1
       };
       expect(location.locationChanged(aLocation)).to.deep.equal({
         type: location.LOCATION_CHANGED,
